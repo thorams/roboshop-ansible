@@ -7,7 +7,6 @@
     domain_name: thorams.store
     ami_id: ami-0055977a6e828a4f4
   tasks:
-
   - name: create SGs
     amazon.aws.ec2_security_group:
       name: "thorams-{{ item }}"
