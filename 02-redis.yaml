@@ -15,7 +15,7 @@
       replace: '0.0.0.0'
 
   - name: disble protect module
-    linefile:
+    lineinfile:
       path: /etc/redis/redis.conf
       regexp: '^#?protected-mode yes'
       line: 'protected-mode no'
